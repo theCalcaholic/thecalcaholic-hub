@@ -18,7 +18,7 @@ def login():
     """Show login form."""
     if request.method == 'POST' and request.form['password'] == 'theMasterIsPresent':
         session['logged_in'] = True
-        resp = make_response( redirect(url_for('index')) )
+        resp = make_response(redirect(url_for('index')) )
         resp.set_cookie('login_attempt', "yes")
         return resp
     return render_template('private/login.html')
