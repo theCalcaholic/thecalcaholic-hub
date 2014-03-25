@@ -1,0 +1,39 @@
+
+/** general **/
+nav.tile-container>a>figure>figcaption
+{
+	text-align:center;
+	position:relative;
+	
+	font-family:"Lucida Console";
+	color:#EEEEEE;	
+}
+
+nav.tile-container>a>figure
+{
+	/*background-color:#444444;*/
+	background-repeat:no-repeat;
+	background-position:center;
+	/*outline-style:dotted;
+	outline-width:1px;*/
+}
+
+nav.tile-container>a>figure>figcaption
+{
+	top:160px;
+}
+
+figure.personal
+{
+	background-image:url(img/personal.png);
+}
+
+figure.statistics
+{
+	background-image:url(img/statistics.png);
+}
+
+figure.printer
+{
+	background-image:url(img/printer2.png);
+}
