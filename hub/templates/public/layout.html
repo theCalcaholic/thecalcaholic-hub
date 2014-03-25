@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Tobias Knöppler{% endblock %}</title>
+    </head>
+    <body>
+        <header></header>
+        <nav>{% include "public/navigation.html" %}</nav>
+        <article>{% block article %}{% endblock %}</article>
+        <aside>{% block side_box %}{% endblock %}</aside>
+        <footer>&copy Tobias Kn&ouml;ppler</footer>
+    </body>
+</html>
