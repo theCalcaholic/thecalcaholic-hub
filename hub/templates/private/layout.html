@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='html5.css') }}">
+
+		{% block style %}
+		    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='hub.css') }}">
+        {% endblock %}
+
+        <title>{% block title %}{% endblock  %} - theCalcaholic::Hub</title>
+
+        <meta charset="UTF-8">
+
+		<!--[if lt IE 9]>
+		<script src="{{ url_for('static', filename='html5shiv.js') }}"></script>
+		<![endif]-->
+	</head>
+	<body>
+	
+		<header><h1>theCalcaholic::Hub</h1></header>
+		{% block body %}{% endblock %}
+	</body>
+</head>
